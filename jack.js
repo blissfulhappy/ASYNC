@@ -2,21 +2,24 @@ const shamsa = document.querySelector(".shamsa");
 const jose = document.querySelector(".jose");
 const msifuni = document.querySelector(".msifuni");
 const nameinput= document.getElementById("name");
-// let kamdomo = [];
+const killy = document.querySelector(".killy");
+let kamdomo = [];
+shamsa.addEventListener("click",async function mset() {
+  
 
-async function mseti() {
   try {
     const response = await fetch("https://jsonplaceholder.typicode.com/users");
     const data = await response.json();
     
     blissful(data);
+  
   } catch (error) {
     console.log("Error:", error);
   }
-}
+});
 
 function blissful(data) {
-  // kamdomo = data;
+  kamdomo = data;
   jose.innerHTML = " "; 
   data.forEach(user => {
     jose.innerHTML += `<div>
@@ -28,16 +31,16 @@ function blissful(data) {
         
     `;
     
-    
+    ``
   });
 }
 
-shamsa.addEventListener("click", mseti);
+// shamsa.addEventListener("click", mseti);
 
 function search() {
-  const jina = nameinput.value.tolowerCase();
-  const results=kamdomo.filter(user => user.name.tolowercase().includes(jina)||
-  user.email.tolowerCase().includes(jina) || user.phone.tolowerCase().includes(jina));
+  const jina = nameinput.value.trim().toLowerCase();
+  const results=kamdomo.filter(user => user.name.toLowerCase().includes(jina)||
+  user.email.toLowerCase().includes(jina) || user.phone.toLowerCase().includes(jina));
 raha(results);
 }
 
@@ -55,26 +58,30 @@ function raha(results) {
       </div> `
   });
 }
-mseti();
-  // if(results){
-  //   killy.innerHTML = " "; 
-  //   results.forEach(user => {
+nameinput.addEventListener("input", search);
+// mseti();
+
+//   if(results){
+//     jose.innerHTML = " "; 
+//     // results.forEach(user => {
   
-  //   killy.innerHTML += `<div>
-  //     <h1>${user.name}</h1>
-  //     <h2>${user.email}</h2>
-  //     <h3>${user.phone}</h3>
-  //     </div> `
-  //   });
-  // } else{
-  //   killy.innerHTML = "<h1>hakuna matokeo</h1>";
+//     jose.innerHTML += `<div>
+//       <h1>${user.name}</h1>
+//       <h2>${user.email}</h2>
+//       <h3>${user.phone}</h3>
+//       </div> `
+    
+//   } else{
+//     jose.innerHTML = "<h1>hakuna matokeo</h1>";
   
+//   }
+// }
+// search();
 
 
-
   
   
 
-msifuni.addEventListener("click", search);
+// msifuni.addEventListener("click", search);
 
 

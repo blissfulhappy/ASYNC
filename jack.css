@@ -3,17 +3,12 @@
     margin: auto;
 box-sizing: border-box;
 
-/* }
-.bea{
-    
-   grid-auto-flow:column;
-   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding:15px; */
-
-    
-
 }
+
+
+    
+
+
 .jose{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -45,5 +40,26 @@ box-sizing: border-box;
     margin: 0;
     color: aqua;
     overflow-wrap: anywhere;
-    /* min-width: none; */
+    
+}
+ .killy{
+    color: rgb(88, 186, 199);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: bisque;
+
+
+}
+button{
+    background-color: rgb(38, 137, 150);
+    color: rgb(17, 16, 16);
+    padding: 2px;
+    border-radius: 5px;
+    border:  1px solid rgb(17, 16, 16);
+}
+h1{
+    color:rgb(167, 57, 13);
+    font-style: italic;
+    margin-bottom: 5px;
 }
