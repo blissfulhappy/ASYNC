@@ -42,6 +42,7 @@ function search() {
   const results=kamdomo.filter(user => user.name.toLowerCase().includes(jina)||
   user.email.toLowerCase().includes(jina) || user.phone.toLowerCase().includes(jina));
 raha(results);
+document.querySelector(".jose").style.display ="none";
 }
 
 function raha(results) {
