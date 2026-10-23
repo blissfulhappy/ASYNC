@@ -1,6 +1,5 @@
 const shamsa = document.querySelector(".shamsa");
 const jose = document.querySelector(".jose");
-const msifuni = document.querySelector(".msifuni");
 const nameinput= document.getElementById("name");
 const killy = document.querySelector(".killy");
 let kamdomo = [];
@@ -35,7 +34,7 @@ function blissful(data) {
   });
 }
 
-// shamsa.addEventListener("click", mseti);
+
 
 function search() {
   const jina = nameinput.value.trim().toLowerCase();
@@ -60,29 +59,6 @@ function raha(results) {
   });
 }
 nameinput.addEventListener("input", search);
-// mseti();
 
-//   if(results){
-//     jose.innerHTML = " "; 
-//     // results.forEach(user => {
-  
-//     jose.innerHTML += `<div>
-//       <h1>${user.name}</h1>
-//       <h2>${user.email}</h2>
-//       <h3>${user.phone}</h3>
-//       </div> `
-    
-//   } else{
-//     jose.innerHTML = "<h1>hakuna matokeo</h1>";
-  
-//   }
-// }
-// search();
-
-
-  
-  
-
-// msifuni.addEventListener("click", search);
 
 
